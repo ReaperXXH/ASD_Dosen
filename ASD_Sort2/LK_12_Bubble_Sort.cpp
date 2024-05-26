@@ -27,7 +27,7 @@ bool is_sorted(int *data, int n)
     return true;
 }
 
-void sort(int *data, int n)
+void bubble_sort(int *data, int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
@@ -35,7 +35,6 @@ void sort(int *data, int n)
         {
             if (data[j] > data[j + 1])
             {
-                // Swap data[j] and data[j+1]
                 int temp = data[j];
                 data[j] = data[j + 1];
                 data[j + 1] = temp;
