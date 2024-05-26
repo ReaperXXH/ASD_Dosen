@@ -35,7 +35,6 @@ void sort(int *data, int n)
         int left = 0;
         int right = i - 1;
 
-        // Binary search to find the correct position to insert the key
         while (left <= right)
         {
             int mid = left + (right - left) / 2;
@@ -50,13 +49,11 @@ void sort(int *data, int n)
             }
         }
 
-        // Shift elements to the right to make space for the key
         for (int j = i - 1; j >= left; j--)
         {
             data[j + 1] = data[j];
         }
 
-        // Insert the key at the correct position
         data[left] = key;
     }
 }
