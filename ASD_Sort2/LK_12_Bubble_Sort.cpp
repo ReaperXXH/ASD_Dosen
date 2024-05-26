@@ -27,7 +27,7 @@ bool is_sorted(int *data, int n)
     return true;
 }
 
-void bubble_sort(int *data, int n)
+void sort(int *data, int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
